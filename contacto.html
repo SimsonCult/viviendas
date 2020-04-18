@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>viviendas</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/estilos.css">
-    </head>
-    <body>
-        <header class="site-header">
-            <div class="contenedor contenido-header">
-                <div class="barra">
-                    <a href="index.html"><img src="img/logo.svg" alt="logo de la empresa">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>viviendas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html"><img src="img/logo.svg" alt="logo de la empresa">
+                </a>
+
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="icono menu">
                     </a>
-
-                    <nav class="navegacion">
-                        <a href="nosotros.htm">Nosoros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
                 </div>
+                <nav class="navegacion" id="navegacion">
+                    <a href="nosotros.htm">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
             </div>
-          
-        </header> 
+        </div>
 
-        <h1 class="centrar-texto fw-300"Contacto</h1>
+    </header>
+
+    <h1 class="centrar-texto fw-300" Contacto</h1>
         <img src="img/destacada3.jpg" alt="imagen principal">
         <main class="contenedor seccion contenido-centrado abajo">
             <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
@@ -64,12 +71,12 @@
                     <div class="forma-contacto">
                         <input type="radio" name="contacto" id="telefono" value="telefono">
                         <label for="telefono">Telefono</label>
-                        
-                        <input type="radio" name="contacto" id="correo" value="correo"> 
+
+                        <input type="radio" name="contacto" id="correo" value="correo">
                         <label for="correo">Email </label>
-                        
+
                     </div>
-                    
+
 
                     <p>Si eligio telefono elija la fecha y hora</p>
                     <label for="fecha">Fecha: </label>
@@ -78,7 +85,7 @@
                     <label for="hola">Hora: </label>
                     <input type="time" id="hora" min="09:00" max="20:00">
                 </fieldset>
-                
+
 
 
                 <input type="submit" name="enviar" id="enviar" class="boton boton-verde">
@@ -95,8 +102,9 @@
                 </nav>
                 <p class="copyrigth">todos los derechos reservados 2019 &copy; </p>
             </div>
-            
+
         </footer>
 
-    </body>
+</body>
+
 </html>
