@@ -1,0 +1,349 @@
+
+html{
+    font-size: 62.5%; /*reset para REMS - 62.5%=10 px de 16px*/
+    box-sizing: border-box; /* snipet para que el padding no sea tomado en cuenta le das un ancho y no afecte*/ 
+}
+
+*, *:before, *:after{
+    box-sizing: inherit; /* snipet para que el padding no sea tomado en cuenta le das un ancho y no afecte*/ 
+}
+/*---------------------------------------- fuentes -----------------------------------------*/
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/*------------------------------------------- globales------------------------------------------- */
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem; /* = 1200px*/ 
+    margin: 0 auto;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+/* --------------------------------------------------------UTILIDADES--------------------------------------------------*/
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;;
+}
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+.contenido-centrado{
+    max-width: 80rem;
+}
+.d-block{
+    display: block!important;
+}
+.abajo{
+    margin-bottom: 4rem;
+}
+/* ------------------------------------------------------------------BOTONES----------------------------------------*/
+.boton{
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+}
+.boton-amarillo{
+    background-color: #E08709;
+}
+
+.boton-verde{
+    background-color: #71B100;
+}
+/*------------------------------------------------------------------------ header-----------------------------------------------------------*/
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0rem 3rem 0rem;
+}
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    height: 100vh;
+    min-height: 60rem;
+    background-position: center center;
+    background-size: cover;
+}
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-header h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2 rem;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+/*---------------------------------------------------------------------------------- Navegacion--------------------------------------------------*/
+.navegacion a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.8rem ; /* es igual a 18px*/
+    margin-right: 2rem;
+}
+.navegacion a:hover{
+    color: rgb(43, 43, 161);
+}
+.navegacion a:last-of-type{
+    margin-right: 0px;
+}
+/* --------------------------------------------------------ICONOS NOSOTROS-------------------------------------------------------*/ 
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.icono{
+    flex-basis: calc(32%);
+    text-align: center;
+}
+.icono h3{
+    text-transform: uppercase;
+}
+/*--------------------------------------- ANUNCUIOS-----------------------------------------------*/
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.anuncio{
+    flex: 0 0 32%;
+    border: 1px #B5B5B5 solid;
+    background-color:rgb(194, 187, 187);
+    margin-bottom: 2rem;
+}
+.contenido-anuncio{
+    padding: 2rem;
+}
+.contenido-anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+.precio{
+    color: rgb(71, 107, 0);
+    font-weight: 700;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 50rem;
+}
+.iconos-caracteristicas li{
+    display: flex;
+}
+.iconos-caracteristicas li img{
+
+    margin-right: 2rem;
+}
+/* ------------------------------------------------------------------CONTACTO---------------------------------------------------------- */
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    height: 40rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.contenido-contaxto{
+    flex: 1;
+    color: white;
+    
+}
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+/* ----------------------------------------------------------blog y testimoniales--------------------------------------------------------- */
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+    flex-basis: calc(40% - 1rem);
+}
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+.entrada-blog .imgagen{
+    flex-basis: 40%;
+    padding-right: 2rem;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: (58%);
+}
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.2em;
+    color: black;
+}
+.texto-entrada a{
+    text-decoration: none;
+}
+.texto-entrada h4::after{
+    content: "";
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71B100;
+    margin-top: 1rem;
+}
+.texto-entrada span{
+    color: rgb(151, 151, 13);
+}
+/*------------------------------------TESTIMONIALES---------------------------------*/
+.testimonial{
+    background-color: green;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote::before{
+    content: "";
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+ }
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-size: 300;
+}
+/* ----------------------------------------------------------------------------FOOTER------------------------------------------------------ */
+.site-footer{
+    background-color: #333333;
+    margin: 0em;
+}
+.contenedor-footer{
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+.copyrigth{
+    margin: 0em;
+    color: white;
+}
+/*------------------------------------------------------------------------internas----------------------------------------------------------*/
+/*nosotros*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 3rem 0;
+}
+/*---------------anuncio*/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*--------------contacto formularios*/
+label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+legend{
+    font-size: 2.4rem;
+    color: #4f4f4f;
+}
+form{
+    text-align: left;
+    font-size: 1.8rem;
+}
+form p{
+    font-size: 1.58rem;
+    color: #3f3f3f;
+
+}
+input:not([type="submit"]),textarea,select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    height: 20rem;
+}
+
+.forma-contacto{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacto p{
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+.boton:hover{
+    cursor : pointer;
+}
+
+input[type="radio"]:hover{
+    cursor : pointer;
+}
